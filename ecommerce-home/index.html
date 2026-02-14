@@ -4,116 +4,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="ShopStore - Premium online grocery store with fresh fruits, vegetables, meats, seafood, and more. Free delivery and 40% discount on your first order.">
+  <meta name="keywords" content="grocery, online shopping, fresh produce, fruits, vegetables, beverages, bakery">
+  <meta name="author" content="ShopStore">
 
-  <title>Amaliyot-1 | Maple Bacon Donuts Recipe</title>
-  <meta name="description" content="Maple Bacon Donuts Recipe">
-  <meta name="author" content="Mirjalol Davronmirzayev">
+  <title>ShopStore - Fresh Groceries Delivered Daily | Free Delivery & 40% Off</title>
 
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </noscript>
 
-  <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self';
-      img-src 'self' data:;
-      style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline';
-      font-src 'self' https://cdnjs.cloudflare.com https: data:;
-      script-src 'self';
-    ">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ShopStore - Fresh Groceries Delivered Daily">
+  <meta property="og:description"
+    content="Get the best quality products at the lowest prices. Free delivery and 40% discount on your first order.">
+
+  <link rel="icon" type="image/png" href="./images/favicon.png">
 </head>
 
-
-
-<!-- header -->
 <body>
-  <header>
-    <div class="top">
-      <div class="first-top">
-        <p><b class="one">FREE delivery & 40% Discount for next</b> <b class="two">orders! Place your 1st order in.
-          </b>
-        </p>
+  <aside class="top" role="complementary" aria-label="Promotional banner">
+    <div class="first-top">
+      <p>
+        <strong class="one">FREE delivery & 40% Discount for next</strong>
+        <span class="two">orders! Place your 1st order in.</span>
+      </p>
+    </div>
+    <div class="second-top">
+      <p>
+        Until the end of the sale:
+        <strong>47</strong> days
+        <strong>06</strong> hours
+        <strong>55</strong> minutes
+        <strong>51</strong> sec.
+      </p>
+    </div>
+  </aside>
+
+  <nav class="center" aria-label="Utility navigation">
+    <div class="into-center">
+      <div class="center-one">
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#account" class="nav-link">My account</a>
+        <a href="#wishlist" class="nav-link">Wishlist</a>
+        <span class="middle" aria-hidden="true">|</span>
+        <p id="sematic">We deliver to you every day from <strong>7:00 to 23:00</strong></p>
       </div>
-      <div class="second-top">
-        <p>Until the end of the sale:
-          <b>47
-          </b>
-          days
-          <b>06</b>
-          hours
-          <b>55</b>
-          minutes
-          <b> 51</b>
-          sec.
-        </p>
+      <div class="center-two">
+        <button type="button" aria-label="Change language" class="utility-btn">English</button>
+        <button type="button" aria-label="Change currency" class="utility-btn">USD</button>
+        <a href="#tracking" class="nav-link">Order Tracking</a>
       </div>
     </div>
-    <div class="center">
-      <div class="into-center">
-        <div class="center-one">
+  </nav>
 
-          <nav>
-            <a href="#">About Us</a>
-            <a href="#">My account</a>
-            <a href="#">Wishlist</a>
-          </nav>
+  <header class="under">
+    <div class="into-under">
+      <a href="/" aria-label="ShopStore home">
+        <img class="logo" src="./images/Header_img.png" alt="ShopStore logo" width="120" height="40">
+      </a>
 
-
-          <p class="middle">|</p>
-          <p id="sematic">We deliver to you every day from <b>7:00 to 23:00</b></p>
-        </div>
-        <div class="center-two">
-          <p>English </p>
-          <p>USD</p>
-          <p>Order Tracking</p>
-        </div>
-      </div>
-    </div>
-    <div class="under">
-      <div class="into-under">
-        <img class="logo" src="./images/Header_img.png" alt="Site logo">
-
-
-
+      <div class="location-selector">
         <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-
-
         <div class="twice">
           <p>Deliver to</p>
-          <b>all</b>
+          <strong>all</strong>
         </div>
-        <div id="input">
-          <label for="search" class="sr-only">Search</label>
-          <input id="search" type="search" placeholder="Search for products, categories or brands...">
-
-          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-
-        </div>
-        <a href="#" aria-label="User account"><i class="fa-regular fa-user"></i></a>
-
-        <div class="twice">
-          <p>Sign in</p>
-          <b>Account</b>
-        </div>
-        <a href="#" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
-        <a href="#" aria-label="Shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
-
       </div>
+
+      <form role="search" id="input" class="search-form">
+        <label for="search" class="sr-only">Search for products</label>
+        <input id="search" type="search" name="q" placeholder="Search for products, categories or brands..."
+          aria-label="Search for products, categories or brands">
+        <button type="submit" aria-label="Search" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <a href="#account" aria-label="User account" class="icon-link">
+        <i class="fa-regular fa-user" aria-hidden="true"></i>
+      </a>
+
+      <div class="twice">
+        <p>Sign in</p>
+        <strong>Account</strong>
+      </div>
+
+      <a href="#wishlist" aria-label="Wishlist" class="icon-link">
+        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+      </a>
+
+      <a href="#cart" aria-label="Shopping cart" class="icon-link">
+        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+      </a>
     </div>
   </header>
-  <main>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <div class="nav-left">
+        <a href="#home" class="nav-item active" aria-current="page">Home</a>
+        <a href="#shop" class="nav-item">Shop</a>
+        <a href="#fruits" class="nav-item">Fruits & Vegetables</a>
+        <a href="#beverages" class="nav-item">Beverages</a>
+        <a href="#blog" class="nav-item">Blog</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="#trending" class="nav-item">Trending Products</a>
+        <a href="#sale" class="nav-item sale-link">
+          Almost Finished
+          <span class="sale">SALE</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
     <div class="into-main">
-      <img class="first-img" src="./images/Main1.png" alt="Main banner" width="300" height="200">
-      <img class="second-img" src="./images/Main.png" alt="Main promotion banner" width="800" height="400">
+      <aside class="main-first" aria-label="Product categories">
+        <ul>
+          <li class="title">
+            <div class="left">
+              <i data-feather="grid" aria-hidden="true"></i>
+              <span>All Categories</span>
+            </div>
+            <i data-feather="chevron-down" aria-hidden="true"></i>
+          </li>
 
+          <li>
+            <a href="#fruits-vegetables" class="category-link">
+              <div class="left">
+                <i data-feather="coffee" aria-hidden="true"></i>
+                <span>Fruits & Vegetables</span>
+              </div>
+              <i data-feather="chevron-right" aria-hidden="true"></i>
+            </a>
+          </li>
 
+          <li>
+            <a href="#meats-seafood" class="category-link">
+              <div class="left">
+                <i data-feather="box" aria-hidden="true"></i>
+                <span>Meats & Seafood</span>
+              </div>
+              <i data-feather="chevron-right" aria-hidden="true"></i>
+            </a>
+          </li>
 
+          <li>
+            <a href="#breakfast-dairy" class="category-link">
+              <div class="left">
+                <i data-feather="shopping-bag" aria-hidden="true"></i>
+                <span>Breakfast & Dairy</span>
+              </div>
+              <i data-feather="chevron-right" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#breads-bakery" class="category-link">
+              <div class="left">
+                <i data-feather="gift" aria-hidden="true"></i>
+                <span>Breads & Bakery</span>
+              </div>
+              <i data-feather="chevron-right" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#beverages" class="category-link">
+              <div class="left">
+                <i data-feather="droplet" aria-hidden="true"></i>
+                <span>Beverages</span>
+              </div>
+              <i data-feather="chevron-right" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#frozen-foods" class="category-link">
+              <div class="left">
+                <i data-feather="cloud-snow" aria-hidden="true"></i>
+                <span>Frozen Foods</span>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#biscuits-snacks" class="category-link">
+              <div class="left">
+                <i data-feather="package" aria-hidden="true"></i>
+                <span>Biscuits & Snacks</span>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#grocery-staples" class="category-link">
+              <div class="left">
+                <i data-feather="shopping-cart" aria-hidden="true"></i>
+                <span>Grocery & Staples</span>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#household" class="category-link">
+              <div class="left">
+                <i data-feather="home" aria-hidden="true"></i>
+                <span>Household Needs</span>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#healthcare" class="category-link">
+              <div class="left">
+                <i data-feather="heart" aria-hidden="true"></i>
+                <span>Healthcare</span>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#baby-pregnancy" class="category-link">
+              <div class="left">
+                <i data-feather="smile" aria-hidden="true"></i>
+                <span>Baby & Pregnancy</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="hero-section">
+        <img class="second-img" src="./images/Main.png"
+          alt="Weekend discount promotion - Get the best quality products at the lowest prices" width="900" height="400"
+          loading="eager">
+      </section>
     </div>
   </main>
-  <footer></footer>
+
+
+
+  <script src="js/app.js" defer></script>
 </body>
 
 </html>
